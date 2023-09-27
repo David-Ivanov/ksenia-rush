@@ -1,0 +1,15 @@
+.hero {
+    &-btn {
+        @extend %btn;
+
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &-btn:hover,
+    &-btn:focus {
+        @extend %btn-hover;
+    }
+}

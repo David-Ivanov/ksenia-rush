@@ -1,0 +1,17 @@
+.about {
+    &-title {
+        margin-bottom: 30px;
+
+        font-size: 40px;
+    }
+
+    &-text {
+        line-height: 1.42;
+
+        color: $second-color;
+
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+    }
+}

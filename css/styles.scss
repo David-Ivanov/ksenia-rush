@@ -1,2 +1,24 @@
 @import "./base/utility";
 @import "./base/base";
+
+// header
+
+@import "./header/header";
+@import "./header/header-nav";
+
+// hero 
+
+@import "./hero/hero";
+@import "./hero/hero-text";
+@import "./hero/hero-btn";
+
+// about
+
+@import "./about/about";
+@import "./about/about-text";
+
+// portfolio
+
+@import "./portfolio/portfolio";
+@import "./portfolio/portfolio-text";
+@import "./portfolio/portfolio-img";

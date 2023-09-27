@@ -1,0 +1,41 @@
+.portfolio {
+
+    &-visible-list,
+    &-hidden-list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    &-hidden-list {
+        opacity: 1;
+        height: 100%;
+    }
+
+    &-visible-item {
+        &:nth-child(1) {
+            border: 2px solid $accent-color;
+        }
+
+
+    }
+
+    &-hidden-item {
+        &:nth-child(3) {
+            border: 2px solid $accent-color;
+        }
+
+        &:nth-child(5) {
+            border: 2px solid $accent-color;
+        }
+    }
+}
+
+.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}

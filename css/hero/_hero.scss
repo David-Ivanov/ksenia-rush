@@ -1,0 +1,12 @@
+.hero {
+    padding-top: 250px;
+    padding-bottom: 200px;
+
+    background-color: $bg-color;
+    background-image: url(../images/hero/hero-bg.jpg);
+    background-size: cover;
+
+    @media (min-resolution: 192dpi) {
+        background-image: url(../images/hero/hero-bg@2x.jpg);
+    }
+}

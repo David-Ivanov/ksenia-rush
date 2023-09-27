@@ -1,0 +1,15 @@
+.header {
+    &-nav-list {
+        display: flex;
+        gap: 61px;
+    }
+
+    &-nav-item {
+        transition: font-weight $transition-duration linear;
+    }
+
+    &-nav-item:hover,
+    &-nav-item:focus {
+        font-weight: 700;
+    }
+}
