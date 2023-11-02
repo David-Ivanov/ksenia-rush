@@ -1,0 +1,16 @@
+.footer-copyright {
+    background-image: url("../../images/footer/footer-bg.jpg");
+    background-size: cover;
+
+    @media screen and (min-resolution) {
+        background-image: url("../../images/footer/footer-bg@2x.jpg");
+    }
+
+    &-box {
+        display: flex;
+        align-items: center;
+        gap: 174px;
+
+        height: 146px;
+    }
+}

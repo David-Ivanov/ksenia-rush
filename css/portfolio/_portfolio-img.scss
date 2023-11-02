@@ -8,11 +8,16 @@
     }
 
     &-hidden-list {
-        opacity: 1;
-        height: 100%;
+        position: absolute;
+
+        transform: translateY(0);
+        transition: transform $transition-duration linear;
+
+        margin-top: 30px;
     }
 
     &-visible-item {
+
         &:nth-child(1) {
             border: 2px solid $accent-color;
         }
@@ -21,6 +26,11 @@
     }
 
     &-hidden-item {
+
+        transform: translateY(0);
+
+        transition: transform $transition-duration linear;
+
         &:nth-child(3) {
             border: 2px solid $accent-color;
         }
@@ -31,9 +41,25 @@
     }
 }
 
+.hidden-list-box {
+    position: relative;
+
+    height: 769px;
+    overflow: hidden;
+    transition: height $transition-duration linear;
+}
+
 .hidden {
+    margin-top: 0;
+
     height: 0;
-    opacity: 0;
+    transform: scaleY(0);
+    transition: height $transition-duration linear;
+
+    &-list {
+        transform: translateY(-100%);
+        transition: transform $transition-duration linear;
+    }
 }
 
 .margin-bottom {

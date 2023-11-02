@@ -1,0 +1,69 @@
+.footer-form {
+    padding: 35px;
+    border: 1px solid $primary-color;
+    width: 502px;
+
+    &-input {
+        display: block;
+
+        width: 100%;
+
+
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 5px;
+
+        transition: border-bottom-color $transition-duration linear;
+
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+        background-color: transparent;
+        color: $primary-color;
+    }
+
+    &-input::placeholder {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &-input:not(:last-child) {
+        margin-bottom: 38px;
+    }
+
+    &-input:last-child {
+        margin-bottom: 41px;
+    }
+
+    &-input:focus {
+        outline: none;
+        border-bottom-color: $primary-color;
+    }
+
+    // btn
+
+    &-btn {
+        padding: 14px 46px;
+
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+        transition: background-color $transition-duration linear;
+
+        border: 2px solid $accent-color;
+
+        background-color: $accent-color;
+    }
+
+    &-btn:hover,
+    &-btn:focus {
+        background-color: transparent;
+    }
+}

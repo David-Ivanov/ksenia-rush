@@ -1,0 +1,64 @@
+.tariff {
+    &-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &-item {
+        width: 370px;
+    }
+
+    // title
+
+    &-subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 82px;
+
+        font-size: 30px;
+        font-weight: 400;
+
+        background-color: rgba(142, 0, 0, 0.70);
+    }
+
+    // list
+
+    &-sublist {
+        padding-top: 46px;
+        padding-right: 37px;
+        padding-left: 37px;
+        padding-bottom: 66px;
+
+        background-color: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(17.5px);
+    }
+
+    &-subitem {
+        display: flex;
+        align-items: center;
+
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.42;
+    }
+
+    &-subitem:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &-subitem::before {
+        content: '';
+
+        display: inline-block;
+        align-items: center;
+
+        width: 3px;
+        height: 3px;
+
+        margin-right: 10px;
+
+        background-color: $primary-color;
+    }
+}

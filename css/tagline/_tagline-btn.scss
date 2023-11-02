@@ -1,0 +1,9 @@
+.tagline {
+    &-btn {
+        @extend %btn;
+    }
+
+    &-btn:hover {
+        @extend %btn-hover;
+    }
+}

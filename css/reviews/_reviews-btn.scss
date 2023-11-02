@@ -1,0 +1,21 @@
+.reviews {
+    &-btn-list {
+        display: flex;
+        gap: 22px;
+    }
+
+    &-btn-item {
+        stroke: $primary-color;
+    }
+
+    &-btn-item:last-child {
+        transform: rotateY(180deg);
+    }
+
+    &-btn {
+        padding: 0;
+
+        border: none;
+        background-color: transparent;
+    }
+}

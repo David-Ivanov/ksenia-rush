@@ -1,0 +1,81 @@
+.quetions {
+    &-item {
+        position: relative;
+
+        overflow: hidden;
+
+        height: 98px;
+
+        transition: height $transition-duration linear;
+        transform: scaleY(100%);
+
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+        &-active {
+            height: 236px;
+        }
+
+    }
+
+    &-btn {
+        width: 100%;
+        height: 98px;
+
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+    }
+
+    // box
+
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-right: 37px;
+        padding-left: 37px;
+
+        height: 98px;
+        width: 1170px;
+    }
+
+    &-subtitle {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    &-icon {
+        stroke: $primary-color;
+        transform: rotateZ(0);
+        transition: transform $transition-duration linear, stroke $transition-duration linear;
+
+        &-active {
+            transform: rotateZ(-180deg);
+            stroke: $accent-color;
+        }
+    }
+
+    // text
+
+    &-text {
+        position: absolute;
+        left: 37px;
+        top: 86px;
+
+        width: 946px;
+
+        opacity: 0;
+
+        transition: opacity $transition-duration linear;
+
+        color: rgba(255, 255, 255, 0.70);
+        line-height: 1.32;
+
+        &-active {
+            opacity: 1;
+        }
+    }
+}

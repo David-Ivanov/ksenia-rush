@@ -1,0 +1,30 @@
+.contacts {
+    &-title {
+        margin-bottom: 52px;
+
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+    }
+
+    &-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &-link {
+        display: block;
+
+        transition: color $transition-duration linear;
+    }
+
+    &-link:hover,
+    &-link:focus {
+        color: $accent-color;
+    }
+
+}

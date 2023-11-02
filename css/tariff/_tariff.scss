@@ -1,0 +1,12 @@
+.tariff {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    background-image: url("../../images/tariff/tariff-bg.jpg");
+    backdrop-filter: blur(4.5px);
+    background-size: cover;
+
+    @media screen and (min-resolution: 192dpi) {
+        background-image: url("../../images/tariff/tariff-bg@2x.jpg");
+    }
+}
