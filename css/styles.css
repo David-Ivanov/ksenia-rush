@@ -284,14 +284,14 @@ section {
 .tariff {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-image: url("../../images/tariff/tariff-bg.jpg");
+  background-image: url("../images/tariff/tariff-bg.jpg");
   -webkit-backdrop-filter: blur(4.5px);
           backdrop-filter: blur(4.5px);
   background-size: cover;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
   .tariff {
-    background-image: url("../../images/tariff/tariff-bg@2x.jpg");
+    background-image: url("../images/tariff/tariff-bg@2x.jpg");
   }
 }
 
@@ -472,11 +472,11 @@ section {
 .tagline {
   height: 416px;
   background-size: cover;
-  background-image: url("../../images/order/order-bg.jpg");
+  background-image: url("../images/order/order-bg.jpg");
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
   .tagline {
-    background-image: url("../../images/order/order-bg@2x.jpg");
+    background-image: url("../images/order/order-bg@2x.jpg");
   }
 }
 .tagline-box {
@@ -576,12 +576,12 @@ section {
 }
 
 .footer-copyright {
-  background-image: url("../../images/footer/footer-bg.jpg");
+  background-image: url("../images/footer/footer-bg.jpg");
   background-size: cover;
 }
 @media screen and (min-resolution) {
   .footer-copyright {
-    background-image: url("../../images/footer/footer-bg@2x.jpg");
+    background-image: url("../images/footer/footer-bg@2x.jpg");
   }
 }
 .footer-copyright-box {

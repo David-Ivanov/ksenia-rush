@@ -2,10 +2,10 @@
     height: 416px;
 
     background-size: cover;
-    background-image: url("../../images/order/order-bg.jpg");
+    background-image: url("../images/order/order-bg.jpg");
 
     @media screen and (min-resolution: 192dpi) {
-        background-image: url("../../images/order/order-bg@2x.jpg");
+        background-image: url("../images/order/order-bg@2x.jpg");
     }
 
     &-box {
