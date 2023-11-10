@@ -28,35 +28,8 @@ const reviewsList = document.querySelector(".reviews-list");
 const scrollToLeftBtn = document.querySelector(".scroll-left");
 const scrollToRightBtn = document.querySelector(".scroll-right");
 
-let score = 0;
-
-function checkMinScore() {
-    if (score < 0) {
-        score = 0;
-    }
-}
-function checkMaxScore() {
-    if (score > 2000) {
-        score = 2000;
-    }
-}
-
-scrollToLeftBtn.addEventListener('click', () => {
-    score -= 500;
-    reviewsList.scroll({
-        left: score,
-        behavior: "smooth",
-    });
-    checkMinScore();
-});
-scrollToRightBtn.addEventListener('click', () => {
-    score += 500;
-    reviewsList.scroll({
-        left: score,
-        behavior: "smooth",
-    });
-    checkMaxScore();
-});
+scrollToLeftBtn.addEventListener('click', () => reviewsList.scrollLeft -= 500);
+scrollToRightBtn.addEventListener('click', () => reviewsList.scrollLeft += 500);
 
 // quetions 
 

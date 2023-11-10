@@ -379,6 +379,7 @@ section {
   display: flex;
   gap: 30px;
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 .reviews-item {
   padding: 30px;
